@@ -10,6 +10,7 @@ export const PROFILE = {
   email: 'marvinnicolasmathebula@gmail.com',
   github: 'https://github.com/marvin54-hub',
   linkedin: 'https://www.linkedin.com/in/marvin-mathebula-406ab1254/',
+  cvUrl: '/Mathebula_Marvin_Matimu_CV.pdf',
   bio: [
     "I'm Marvin Matimu Mathebula, a Computer Science student at Tshwane University of Technology, graduating in 2026. I design and build software that solves real problems — from backend APIs in Spring Boot and JEE to interactive frontends with React.js.",
     "I'm driven by curiosity, clean architecture, and the belief that great code is a form of craft. My focus spans full-stack web development, system design, and the complete software development lifecycle.",
@@ -282,7 +283,9 @@ export const PROJECTS = [
     demo: '',
     github: 'https://github.com/marvin54-hub/cropplanner',
     status: 'active',
-    screenshots: [CROPPLANNER_IMG],
+    screenshots: [
+    '/images/smartcropplannerhome.png',
+    '/images/smartcropfarms.png',],
   },
   {
     id: 'p2',
@@ -292,7 +295,9 @@ export const PROJECTS = [
     demo: 'https://dsd-fleet-management-system.vercel.app',
     github: 'https://github.com/marvin54-hub',
     status: 'active',
-    screenshots: [DSDFLEETMANAGEMENTSYSTEM_IMG],
+    screenshots: [
+    '/images/dsdfleethome.png',
+    '/images/dsdfleetadmin.png', ],
   },
   {
     id: 'p3',
@@ -302,7 +307,9 @@ export const PROJECTS = [
     demo: 'https://elite-carwash-gl09.onrender.com',
     github:'https://github.com/marvin54-hub/Elite-Carwash',
     status: 'active',
-    screenshots: [ELITECARWASH_IMG],
+    screenshots: [
+    '/images/elitehome.png',
+    '/images/eliteadmin_panel.png',],
   },
   {
     id: 'p4',
@@ -312,7 +319,9 @@ export const PROJECTS = [
     demo: 'https://academic-calculator-five.vercel.app',
     github: 'https://github.com/marvin54-hub/Academic-Calculator',
     status: 'active',
-    screenshots: [ACADEMICCALCULATOR_IMG],
+    screenshots: [
+    '/images/calculatorhome.png',
+    '/images/calculatorInside.png',],
   },
   {
     id: 'p5',
@@ -322,7 +331,8 @@ export const PROJECTS = [
     demo: 'https://marvin54-hub.github.io/myportfolio/',
     github: 'https://github.com/marvin54-hub/myportfolio',
     status: 'active',
-    screenshots: [MYDEVPORTFOLIO_IMG],
+    screenshots: [
+    '/images/portfoliohome.png',],
   },
 ]
 
@@ -333,3 +343,8 @@ export const SKILLS = [
   { id: 'sk4', name: 'Tools',          icon: 'ti-tools',      chips: ['VS Code', 'IntelliJ IDEA', 'NetBeans', 'Git', 'GitHub', 'Vercel', 'Firebase'] },
   { id: 'sk5', name: 'Concepts',       icon: 'ti-bulb',       chips: ['System Design', 'OOP', 'SOLID', 'SDLC', 'REST APIs', 'MVC'] },
 ]
+
+export const CV = {
+  file: '/Mathebula_Marvin_Matimu_CV.pdf',
+  url: ''
+}

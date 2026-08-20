@@ -9,8 +9,7 @@ import CV from './components/CV'
 import Contact from './components/Contact'
 import Modal from './components/Modal'
 import Toast from './components/Toast'
-import { PROFILE, EXPERIENCE, EDUCATION, PROJECTS, SKILLS } from './data'
-
+import { PROFILE, EXPERIENCE, EDUCATION, PROJECTS, SKILLS, CV as cvData } from './data'
 // ── Admin password comes from .env — never hardcoded ──
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'marvin2026'
 
@@ -46,7 +45,7 @@ export default function App() {
   const [education,  setEducation]  = usePersisted('pf_education',  EDUCATION)
   const [projects,   setProjects]   = usePersisted('pf_projects',   PROJECTS)
   const [skills,     setSkills]     = usePersisted('pf_skills',     SKILLS)
-  const [cv,         setCv]         = usePersisted('pf_cv',         { file: '', fileName: '', url: '' })
+  const [cv,          setCv]         = usePersisted('pf_cv',         cvData)
 
   // ── admin mode ────────────────────────────────
   const [isAdmin,       setIsAdmin]       = useState(false)
@@ -100,7 +99,7 @@ export default function App() {
   function openProfileModal() { setDraftProfile(profile); setProfileOpen(true) }
   function saveProfile() { setProfile(draftProfile); setProfileOpen(false); showToast('Profile saved') }
 
-  const cvSrc     = cv.file || cv.url
+  const cvSrc = cv.file || cv.url || profile.cvUrl || ''
   const cvFileName = cv.fileName || 'Marvin_Mathebula_CV.pdf'
 
   return (
