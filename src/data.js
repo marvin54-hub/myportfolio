@@ -10,7 +10,7 @@ export const PROFILE = {
   email: 'marvinnicolasmathebula@gmail.com',
   github: 'https://github.com/marvin54-hub',
   linkedin: 'https://www.linkedin.com/in/marvin-mathebula-406ab1254/',
-  cvUrl: '/Mathebula_Marvin_Matimu_CV.pdf',
+  cvUrl: '/myportfolio/Mathebula_Marvin_CV.pdf',
   bio: [
     "I'm Marvin Matimu Mathebula, a Computer Science student at Tshwane University of Technology, graduating in 2026. I design and build software that solves real problems — from backend APIs in Spring Boot and JEE to interactive frontends with React.js.",
     "I'm driven by curiosity, clean architecture, and the belief that great code is a form of craft. My focus spans full-stack web development, system design, and the complete software development lifecycle.",
@@ -345,6 +345,6 @@ export const SKILLS = [
 ]
 
 export const CV = {
-  file: '/Mathebula_Marvin_Matimu_CV.pdf',
+  file: '/Mathebula_Marvin_CV.pdf',
   url: ''
 }
